@@ -289,6 +289,6 @@ def _compute_iteration(dataset, centroids, distance_measure):
     new_centroids = dataset.get_data_frame().groupby(nearest_centroid).mean()
 
     # XXX turning each row in dataframe into a series... refactor!    
-    list_of_series = [new_centroids.ix[ind] for ind in new_centroids.index]
+    list_of_series = [new_centroids.iloc[ind] for ind in new_centroids.index]
     
     return list_of_series, cluster_assignments
