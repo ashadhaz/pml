@@ -24,7 +24,7 @@ Provides capabilities for plotting DataSets.
 """
 
 import matplotlib.pyplot as plt
-from pandas.tools.plotting import radviz
+from pandas.plotting import radviz
 
 from pml.utils import errors
 
